@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  color: #030027;
+}
+
+.seccion-1, .seccion-2{
+
+  height: 100vh;
+  background-color:#f2f3d9;
+  display: grid;
+  place-items: center;
+}
+
+.seccion-2{
+
+  background-color: #dc9e82;
+}
+
+.encriptar, .desencriptar{
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 80%;
+  width: clamp(200px,80vw,500px);
+
+  padding: 1rem;
+}
+
+#encriptartexto, #desencriptartexto{
+
+  height: 50%;
+  border: none;
+}
+
+.leyenda{
+
+  font-size: 12px;
+}
+
+.leyenda::before{
+
+  content: '!';
+  display: grid;
+  place-items: center;
+  position: relative;
+  color: white;
+  width: 10px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #030027;
+  left: -7%;
+  top: 12px;
+
+
+}
+
+.buttons{
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+
+}
+
+button{
+
+  align-items: center;
+  padding: 4%;
+  background-color: #151e3f;
+  color: #f2f3d9;
+  border-radius: 0.5em;
+  outline: none;
+  border-style: none;
+  width: clamp(50px, 40vw, 70%);
+  font-size: 0.5em;
+  cursor: pointer;
+}
+
+.desencriptar > button{
+
+  background-color: #4f000b;
+  color: white;
+
+
+}
