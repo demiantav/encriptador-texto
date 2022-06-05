@@ -30,7 +30,6 @@ body{
   justify-content: space-around;
   height: 80%;
   width: clamp(200px,80vw,500px);
-
   padding: 1rem;
 }
 
@@ -38,6 +37,9 @@ body{
 
   height: 50%;
   border: none;
+  padding: 0.5rem;
+  outline: none;
+
 }
 
 .leyenda{
@@ -83,14 +85,22 @@ button{
   outline: none;
   border-style: none;
   width: clamp(50px, 40vw, 70%);
-  font-size: 0.5em;
+  font-size: clamp(12px,5vw,1em);
   cursor: pointer;
 }
+
+
 
 .desencriptar > button{
 
   background-color: #4f000b;
   color: white;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+
+
 
 
 }
