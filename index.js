@@ -10,11 +10,11 @@ const botonCopiar= document.getElementsByClassName('copiar')[0];
 botonEncriptar.addEventListener("click", () => {
 
   desencriptarValue.value= encriptarValue.value
-  .replace('e','enter')
-  .replace('i','imes')
-  .replace('a','ai')
-  .replace('o','ober')
-  .replace('u','ufat');
+  .replaceAll('e','enter')
+  .replaceAll('i','imes')
+  .replaceAll('a','ai')
+  .replaceAll('o','ober')
+  .replaceAll('u','ufat');
 
   encriptarValue.value= "";
 
@@ -23,11 +23,11 @@ botonEncriptar.addEventListener("click", () => {
 botonDesencriptar.addEventListener("click", () => {
 
   desencriptarValue.value= encriptarValue.value
-  .replace('enter','e')
-  .replace('imes','i')
-  .replace('ai','a')
-  .replace('ober','o')
-  .replace('ufat','u');
+  .replaceAll('enter','e')
+  .replaceAll('imes','i')
+  .replaceAll('ai','a')
+  .replaceAll('ober','o')
+  .replaceAll('ufat','u');
 
 });
 
